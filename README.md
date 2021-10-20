@@ -1,6 +1,20 @@
-# Demo Projekat
+# PHP_Commerce
 
 This is a vanilla PHP implementation of a shop catalog website. It's built on PHP 7.4.9, MySQL 5.7.13 and uses a nginx web server.
+
+## Features
+
+### Store front
+* The user can view a grid of products and by clicking on a specific product he/she/they 
+can view more information about the selected product.  
+* The user can filter products by belonging category, by a keyword, by price etc.
+### Admin Panel
+* The administrator can add, edit and delete products that are shown on the store.  
+* Each product belongs to a category.  
+* Category can be stand alone or belong to another category.  
+* The administrator can add, edit and remove categories. If a category has products,
+it cannot be deleted.  
+
 
 ## Installation
 
@@ -10,8 +24,9 @@ This is a vanilla PHP implementation of a shop catalog website. It's built on PH
     
   * docker-compose.yml
   * initDB.sql
+  You can find them at the bottom of this document or in the repository files.
   
-2. In shop root directory create a *.env* file where you define database connection
+1. In shop root directory create a *.env* file where you define database connection
 environemnt varibles (MY_SQL_USER, MY_SQL_PASSWORD, MY_SQL_ROOT_PASSWORD).
 3. Open a new terminal window in the shop root directory.  
 4. Create a subdirectory called *uploads* and give all users read and write access to the directory.
