@@ -1,0 +1,24 @@
+.dashboard {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 5rem);
+}
+
+.dashboard-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.dashboard-item label {
+    justify-self: end;
+}
+
+.dashboard-item input {
+    justify-self: start;
+}
+
+input.dashboard-input {
+    width: 5rem;
+    height: 2rem;
+    margin-left: 1rem;
+}

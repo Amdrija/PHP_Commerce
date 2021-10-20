@@ -1,0 +1,44 @@
+.dashboard-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+}
+
+.dashboard-menu-item {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+.dashboard-menu-item h2 {
+    display: inline;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.dashboard-menu-item:hover {
+    background-color: #eee;
+}
+
+.dashboard-menu-item.active {
+    background-color: #12348d;
+    color: white;
+}
+
+.dashboard-menu-item:hover.active {
+    background-color: #3254ad;
+}
+
+.dashboard {
+    padding: 2rem;
+    min-height: calc(100vh - 3 * 3rem);
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

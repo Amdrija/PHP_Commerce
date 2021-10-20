@@ -1,0 +1,31 @@
+{
+    "name": "andrijaj/demo_projekat",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Andrija Jelenkovic",
+            "email": "andrija.jelenkovic@logeecom.com"
+        }
+    ],
+    "require": {
+        "illuminate/database": "8.4.*",
+      "ext-json": "*",
+      "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Andrijaj\\DemoProject\\": "app",
+            "Andrijaj\\DemoProject\\Framework\\": "Framework",
+            "Andrijaj\\DemoProject\\Framework\\Exceptions\\": "Framework/Exceptions",
+            "Andrijaj\\DemoProject\\Framework\\Responses\\": "Framework/Responses",
+            "Andrijaj\\DemoProject\\Model\\": "app/Models",
+            "Andrijaj\\DemoProject\\Services\\": "app/Services",
+            "Andrijaj\\DemoProject\\Controllers\\": "app/Controllers",
+            "Andrijaj\\DemoProject\\Controllers\\AdminControllers\\": "app/Controllers/AdminControllers",
+            "Andrijaj\\DemoProject\\Controllers\\FrontControllers\\": "app/Controllers/FrontControllers",
+            "Andrijaj\\DemoProject\\Middleware\\": "app/Middleware",
+            "Andrijaj\\DemoProject\\Repositories\\": "app/Repositories",
+            "Andrijaj\\DemoProject\\Entities\\": "app/Entities"
+        }
+    }
+}

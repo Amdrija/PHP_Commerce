@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+    php:
+        image: andrijajlogeecom/demo_projekat:phpImage
+        environment:
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            HOST: mysql
+        networks:
+            - app-network
+        depends_on:
+            - mysql
+        volumes:
+            - ./uploads:/var/www/demo_projekat/public/img
+
+    nginx:
+        image: andrijajlogeecom/demo_projekat:nginxImage
+        ports:
+            - 80:80
+        networks:
+            - app-network
+        depends_on:
+            - php
+        volumes:
+            - ./uploads:/var/www/demo_projekat/public/img
+            - ./server/logs:/var/log/nginx
+
+    mysql:
+        image: mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+        volumes:
+            - ./database/data:/var/lib/mysql
+            - ./initDB.sql:/docker-entrypoint-initdb.d/initDB.sql
+        networks:
+            - app-network
+
+networks:
+    app-network:
+        driver: bridge

@@ -1,0 +1,36 @@
+@import "productList.css";
+
+.search-title {
+    font-size: 2rem;
+    margin-left: 4rem;
+}
+
+.search-box {
+    margin: 4rem;
+    display: flex;
+    justify-content: start;
+}
+
+.form-input-container {
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+label {
+    margin-right: 0.5rem;
+}
+
+.form-input-container input,
+.form-input-container select {
+    display: block;
+    flex-grow: 1;
+}
+
+.error-message {
+    margin: 0 auto;
+    padding: 4rem;
+    text-align: center;
+    color: #666666;
+}

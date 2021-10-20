@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+.inline {
+    display: inline;
+}
+
+.shadow {
+    -webkit-box-shadow: 0 10px 103px -47px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 10px 103px -47px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 103px -47px rgba(0, 0, 0, 0.8);
+}
+
+.button {
+    background-color: #12348d;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    display: block;
+    font-weight: 300;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+.button:hover {
+    background-color: #3254ad;
+}
+
+.button.danger {
+    background-color: #d1193e;
+}
+
+.button.danger:hover {
+    background-color: #f1395e;
+}
+
+.button.cancel {
+    background-color: white;
+    color: #12348d;
+}
+
+.button.cancel:hover {
+    background-color: #eeeeee;
+}
+
+.button:disabled {
+    background-color: #eeeeee;
+    color: #666;
+}
+
+.button:disabled:hover {
+    background-color: #eeeeee;
+}
+
+.button.danger:disabled {
+    background-color: #eeeeee;
+    color: #666;
+}
+
+.button.danger:disabled:hover {
+    background-color: #eeeeee;
+}
+
+.button.cancel:disabled {
+    background-color: #eeeeee;
+    color: #666;
+}
+
+.button.cancel:disabled:hover {
+    background-color: #eeeeee;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 300;
+}
+
+.alert-container {
+    background-color: #f8d7da;
+    padding: 0.5rem 1rem;
+    border: 1px solid #d1193e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.alert-message {
+    font-size: 1.2rem;
+    color: #721c24;
+}
+
+.alert-button {
+    font-size: 2rem;
+    color: #d1193e;
+    cursor: pointer;
+    padding: 0 1rem;
+    transition: background-color 0.3s;
+}
+
+.alert-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+
+

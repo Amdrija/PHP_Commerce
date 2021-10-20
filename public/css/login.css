@@ -1,0 +1,54 @@
+.login-container {
+    max-width: 500px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.center-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    display: block;
+    width: 100%;
+}
+
+.margin-top {
+    margin-top: 1.25rem;
+}
+
+.title {
+    font-size: 4rem;
+    margin-left: 6rem;
+}
+
+.subtitle {
+    font-weight: lighter;
+    font-size: 1.35rem;
+    margin-left: 6rem;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#keep-me-logged-in {
+    margin-left: 6.2rem;
+}
+
+input[type=text], input[type=password] {
+    width: 25rem;
+}
+
+.alert-container {
+    margin-left: 11rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
